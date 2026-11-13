@@ -33,8 +33,7 @@ jobs:
         run: npm run build
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
+        # Pages must first be enabled once in repository Settings → Pages.
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
